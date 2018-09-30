@@ -25,17 +25,21 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
         searchResults = []
         for i in 0...2 {
             searchResults.append(String(format: "Fake result for %d for '%@'", i, searchBar.text!))
         }
         tableView.reloadData()
     }
+    
+    func position(for bar: UIBarPositioning) -> UIBarPosition {
+        return .topAttached
+    }
 }
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        searchBar.resignFirstResponder()
         return searchResults.count
     }
     
