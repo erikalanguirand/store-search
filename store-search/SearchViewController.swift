@@ -14,6 +14,9 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: Variables
+    var searchResults = [String]()
+    
     // MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +25,11 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("The search text is: '\(searchBar.text!)'")
+        searchResults = []
+        for i in 0...2 {
+            searchResults.append(String(format: "Fake result for %d for '%@'", i, searchBar.text!))
+        }
+        tableView.reloadData()
     }
 }
 
