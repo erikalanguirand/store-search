@@ -64,19 +64,59 @@
 		03AED0CC21615F84008ADBC6 /* store-search */ = {
 			isa = PBXGroup;
 			children = (
+				03AED0EA21617A26008ADBC6 /* Models */,
+				03AED0EB21617A2F008ADBC6 /* Views */,
+				03AED0E921617A1F008ADBC6 /* Controllers */,
+				03AED0EC21617A56008ADBC6 /* Storyboards */,
+				03AED0ED21617A70008ADBC6 /* Enums */,
 				03AED0CD21615F84008ADBC6 /* AppDelegate.swift */,
-				03AED0CF21615F84008ADBC6 /* SearchViewController.swift */,
-				03AED0DF216169D0008ADBC6 /* SearchResult.swift */,
-				03AED0E32161718B008ADBC6 /* SearchResultCell.swift */,
-				03AED0E5216173E1008ADBC6 /* Identifier.swift */,
-				03AED0D121615F84008ADBC6 /* Main.storyboard */,
-				03AED0D621615F84008ADBC6 /* LaunchScreen.storyboard */,
-				03AED0E121616E8B008ADBC6 /* SearchResultCell.xib */,
-				03AED0E7216174D9008ADBC6 /* NoResultCell.xib */,
 				03AED0D421615F84008ADBC6 /* Assets.xcassets */,
 				03AED0D921615F84008ADBC6 /* Info.plist */,
 			);
 			path = "store-search";
+			sourceTree = "<group>";
+		};
+		03AED0E921617A1F008ADBC6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				03AED0CF21615F84008ADBC6 /* SearchViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		03AED0EA21617A26008ADBC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03AED0DF216169D0008ADBC6 /* SearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03AED0EB21617A2F008ADBC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03AED0E32161718B008ADBC6 /* SearchResultCell.swift */,
+				03AED0E121616E8B008ADBC6 /* SearchResultCell.xib */,
+				03AED0E7216174D9008ADBC6 /* NoResultCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03AED0EC21617A56008ADBC6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				03AED0D121615F84008ADBC6 /* Main.storyboard */,
+				03AED0D621615F84008ADBC6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		03AED0ED21617A70008ADBC6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				03AED0E5216173E1008ADBC6 /* Identifier.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
