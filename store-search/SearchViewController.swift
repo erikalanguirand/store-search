@@ -21,11 +21,14 @@ class SearchViewController: UIViewController {
     // MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         var cellNib = UINib(nibName: Identifier.searchResultCell.rawValue, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: Identifier.searchResultCell.rawValue)
         
         cellNib = UINib(nibName: Identifier.noResultCell.rawValue, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: Identifier.noResultCell.rawValue)
+        
+        searchBar.becomeFirstResponder()
     }
 }
 
