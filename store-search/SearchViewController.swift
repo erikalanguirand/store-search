@@ -21,8 +21,11 @@ class SearchViewController: UIViewController {
     // MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        let cellNib = UINib(nibName: "SearchResultCell", bundle: nil)
-        tableView.register(cellNib, forCellReuseIdentifier: "SearchResultCell")
+        var cellNib = UINib(nibName: Identifier.searchResultCell.rawValue, bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: Identifier.searchResultCell.rawValue)
+        
+        cellNib = UINib(nibName: Identifier.noResultCell.rawValue, bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: Identifier.searchResultCell.rawValue)
     }
 }
 
@@ -59,18 +62,16 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultCell", for: indexPath) as! SearchResultCell
-        
         if searchResults.count == 0 {
-            cell.nameLabel!.text = "Nothing found"
-            cell.artistNameLabel!.text = ""
+            return tableView.dequeueReusableCell(withIdentifier: Identifier.noResultCell.rawValue, for: indexPath)
         } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: Identifier.searchResultCell.rawValue, for: indexPath) as! SearchResultCell
+        
             let result = searchResults[indexPath.row]
             cell.nameLabel!.text = result.name
             cell.artistNameLabel!.text = result.artistName
+            return cell
         }
-        
-        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

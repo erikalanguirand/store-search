@@ -31,21 +31,22 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnu-2x-1iH">
-                        <rect key="frame" x="84" y="55.5" width="252" height="18"/>
+                        <rect key="frame" x="84" y="45" width="275" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="fnu-2x-1iH" secondAttribute="bottom" constant="6" id="40A-cv-JOW"/>
+                    <constraint firstItem="fnu-2x-1iH" firstAttribute="leading" secondItem="lxl-WX-Q9O" secondAttribute="trailing" constant="8" id="1ao-9o-5QM"/>
                     <constraint firstItem="lxl-WX-Q9O" firstAttribute="top" secondItem="Dh0-ju-cfd" secondAttribute="top" constant="10" id="5hy-eK-4pL"/>
                     <constraint firstItem="lxl-WX-Q9O" firstAttribute="leading" secondItem="Dh0-ju-cfd" secondAttribute="leading" constant="16" id="7Bq-JQ-cEg"/>
                     <constraint firstItem="xRp-Nk-Wae" firstAttribute="top" secondItem="Dh0-ju-cfd" secondAttribute="top" constant="16" id="7op-gE-dDm"/>
                     <constraint firstAttribute="trailing" secondItem="xRp-Nk-Wae" secondAttribute="trailing" constant="71" id="N97-QC-0C4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fnu-2x-1iH" secondAttribute="bottom" constant="6" id="VHw-ha-R9q"/>
                     <constraint firstItem="xRp-Nk-Wae" firstAttribute="leading" secondItem="lxl-WX-Q9O" secondAttribute="trailing" constant="8" id="cB4-MD-2sY"/>
-                    <constraint firstItem="fnu-2x-1iH" firstAttribute="leading" secondItem="lxl-WX-Q9O" secondAttribute="trailing" constant="8" id="gMs-vy-xnO"/>
-                    <constraint firstAttribute="trailing" secondItem="fnu-2x-1iH" secondAttribute="trailing" constant="39" id="uGI-zQ-EeH"/>
+                    <constraint firstItem="fnu-2x-1iH" firstAttribute="trailing" secondItem="Dh0-ju-cfd" secondAttribute="trailingMargin" id="msQ-hs-qbG"/>
+                    <constraint firstItem="fnu-2x-1iH" firstAttribute="top" secondItem="xRp-Nk-Wae" secondAttribute="bottom" constant="7.5" id="pTM-hH-104"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
