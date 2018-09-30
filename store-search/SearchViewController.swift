@@ -11,14 +11,17 @@ import UIKit
 class SearchViewController: UIViewController {
 
     // MARK: Properties
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: Variables
+    
     var searchResults = [SearchResult]()
     var hasSearched = false
     
     // MARK: Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +34,8 @@ class SearchViewController: UIViewController {
         searchBar.becomeFirstResponder()
     }
 }
+
+// MARK: UISearchBarDelegate Protocol Methods
 
 extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -53,6 +58,8 @@ extension SearchViewController: UISearchBarDelegate {
         return .topAttached
     }
 }
+
+// MARK: UITableViewDelegate & UITableViewDataSource Protocol Methods
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
