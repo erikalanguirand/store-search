@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,14 +14,35 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="store_search" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6pB-00-u8b">
+                                <rect key="frame" x="0.0" y="76" width="320" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2tl-Fi-HNN">
+                                <rect key="frame" x="0.0" y="20" width="320" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6pB-00-u8b" firstAttribute="top" secondItem="2tl-Fi-HNN" secondAttribute="bottom" id="1BQ-aP-HJ3"/>
+                            <constraint firstItem="6pB-00-u8b" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MeS-IE-pC1"/>
+                            <constraint firstItem="2tl-Fi-HNN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a3T-8n-WPc"/>
+                            <constraint firstItem="6pB-00-u8b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e8G-nu-NRg"/>
+                            <constraint firstItem="6pB-00-u8b" firstAttribute="top" secondItem="2tl-Fi-HNN" secondAttribute="bottom" id="iCk-OD-32f"/>
+                            <constraint firstItem="2tl-Fi-HNN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="muT-hi-FMz"/>
+                            <constraint firstItem="2tl-Fi-HNN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ucd-cB-gdN"/>
+                            <constraint firstItem="6pB-00-u8b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zHf-xU-Rx1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-80.625" y="132.04225352112675"/>
         </scene>
     </scenes>
 </document>
