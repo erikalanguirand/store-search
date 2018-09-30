@@ -52,7 +52,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         var cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
         
         if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellIdentifier)
         }
         
         let result = searchResults[indexPath.row]
