@@ -67,7 +67,7 @@ extension SearchViewController: UISearchBarDelegate {
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if searchResults.count == 0 && hasSearched {
+        if (searchResults.count == 0 && hasSearched) || isLoading {
             return 1
         } else {
             return searchResults.count
@@ -75,6 +75,13 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if isLoading {
+            let cell = tableView.dequeueReusableCell(withIdentifier: Identifier.loadingCell.rawValue, for: indexPath)
+            let spinner = cell.viewWithTag(100) as! UIActivityIndicatorView
+            spinner.startAnimating()
+            return cell
+        }
         
         if searchResults.count == 0 {
             return tableView.dequeueReusableCell(withIdentifier: Identifier.noResultCell.rawValue, for: indexPath)
