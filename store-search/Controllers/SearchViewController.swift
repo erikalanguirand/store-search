@@ -19,6 +19,7 @@ class SearchViewController: UIViewController {
     
     var searchResults = [SearchResult]()
     var hasSearched = false
+    var isLoading = false
     
     // MARK: Methods
     
@@ -30,6 +31,9 @@ class SearchViewController: UIViewController {
         
         cellNib = UINib(nibName: Identifier.noResultCell.rawValue, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: Identifier.noResultCell.rawValue)
+        
+        cellNib = UINib(nibName: Identifier.loadingCell.rawValue, bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: Identifier.loadingCell.rawValue)
         
         searchBar.becomeFirstResponder()
     }

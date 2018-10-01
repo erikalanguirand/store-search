@@ -9,4 +9,5 @@
 enum Identifier: String {
     case searchResultCell = "SearchResultCell"
     case noResultCell = "NoResultCell"
+    case loadingCell = "LoadingCell"
 }

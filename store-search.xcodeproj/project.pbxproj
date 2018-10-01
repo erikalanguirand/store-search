@@ -17,6 +17,7 @@
 		03AED0E42161718B008ADBC6 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AED0E32161718B008ADBC6 /* SearchResultCell.swift */; };
 		03AED0E6216173E1008ADBC6 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AED0E5216173E1008ADBC6 /* Identifier.swift */; };
 		03AED0E8216174D9008ADBC6 /* NoResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03AED0E7216174D9008ADBC6 /* NoResultCell.xib */; };
+		03AED0EF2161B3E4008ADBC6 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03AED0EE2161B3E4008ADBC6 /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		03AED0E32161718B008ADBC6 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		03AED0E5216173E1008ADBC6 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		03AED0E7216174D9008ADBC6 /* NoResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoResultCell.xib; sourceTree = "<group>"; };
+		03AED0EE2161B3E4008ADBC6 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				03AED0E32161718B008ADBC6 /* SearchResultCell.swift */,
 				03AED0E121616E8B008ADBC6 /* SearchResultCell.xib */,
 				03AED0E7216174D9008ADBC6 /* NoResultCell.xib */,
+				03AED0EE2161B3E4008ADBC6 /* LoadingCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			files = (
 				03AED0D821615F84008ADBC6 /* LaunchScreen.storyboard in Resources */,
 				03AED0D521615F84008ADBC6 /* Assets.xcassets in Resources */,
+				03AED0EF2161B3E4008ADBC6 /* LoadingCell.xib in Resources */,
 				03AED0E221616E8B008ADBC6 /* SearchResultCell.xib in Resources */,
 				03AED0E8216174D9008ADBC6 /* NoResultCell.xib in Resources */,
 				03AED0D321615F84008ADBC6 /* Main.storyboard in Resources */,
